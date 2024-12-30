@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Dashbord</title>
+ <!-- strylesheet -->
+  <link rel="stylesheet" href="./style.css">
+   <!-- Material stylesheet -->
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" 
+   rel="stylesheet"/> 
+</head>
+<body>
+    <div class="conteiner">
+         <aside>    
+            <div class="top">
+                <div class="logo">
+                    <img src="/Imagens/starrr.png">
+                    <h2>Star<span class="danger">Line</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>     
+            <div class="sidebar">
+                <a href="a">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h3>Dashbord</h3>
+                <a/>                    
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">person</span>
+                    <h3>Cliente</h3>
+                <a/>                    
+                <a href="a">
+                    <span class="material-symbols-outlined">contract</span>
+                    <h3>Pedidos</h3>
+                <a/>                    
+                <a href="a">
+                    <span class="material-symbols-outlined">show_chart</span>
+                    <h3>Analytic</h3>
+                <a/>                    
+                <a href="a">
+                    <span class="material-symbols-outlined">mail</span>
+                    <h3>Mensagem</h3>
+                    <span class="messagem-count">26</span>
+                <a/>                    
+                <a href="a">
+                    <span class="material-symbols-outlined">inventory</span>
+                    <h3>Produtos</h3>
+                <a/>                    
+                <a href="a">
+                    <span class="material-symbols-outlined">report</span>
+                    <h3>Reportar</h3>
+                <a/>                    
+                <a href="a">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Configuração</h3>
+                <a/>                    
+                <a href="a">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>Add Produto</h3>
+                <a/>                    
+                <a href="a">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                <a/>                                    
+            </div>
+         </aside> 
+         <!------------------------------- FIM ASIDE --------------------->
+         <main>
+            <h1>Dashbord</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-symbols-outlined">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total de Entradas</h3>
+                            <h1>R$25.000,00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-mude">Ultimas 24 Horas</small>
+                </div>
+                <!----------- FIM SALES ----------------------->
+                <div class="expenses">
+                    <span class="material-symbols-outlined">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total de Saídas</h3>
+                            <h1>R$2.000,00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-mude">Ultimas 24 Horas</small>
+                </div>
+                <!----------- FIM EXPENSES ----------------------->
+                <div class="income">
+                    <span class="material-symbols-outlined">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Renda Mensal</h3>
+                            <h1>R$100.000.00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-mude">Ultimas 24 Horas</small>
+                </div>
+                <!----------- FIM INCOME ----------------------->            
+            </div>
+            <!--------------- FIM INSIGHTS --------------------------->
+            <div class="recent-orders">
+                <h2>Pedidos Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Produto</th>
+                            <th>Numero do Produto</th>
+                            <th>Pagamento</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <!-- <tr>
+                            <td> Carrinho de controle remoto</td>
+                            <td>001</td>
+                            <td>Pagamento Pendente</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        -->
+                    </tbody>
+                </table>
+                <a href="#">Mostrar Tudo</a>
+            </div>
+         </main>
+         <!-------------------- FIM MAIN ------------------------------------>
+         <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-symbols-outlined active">light_mode</span>
+                    <span class="material-symbols-outlined ">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Oi, <b>Juan</b></p>
+                        <small class="text-mude">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="/Imagens/photo1.png">
+                    </div>
+                </div>
+            </div>
+            <!---------------------- FIM TOP -------------------------->
+            <div class="recent-updates">
+                <h2>Atualizações Recentes</h2>
+                <div class="updates">
+                    <div class="update">
+                        <!-- <img src="/Imagens/photo1.png"> -->
+                    </div>
+                    <div class="message">
+                        <p><b>Juan Thiago:</b> Pedido recebido na noite de 2 drones</p>
+                        <small class="text-mude">há 3 Horas</small>
+                    </div>
+                    <div class="update">
+                        <!-- <img src="/Imagens/photo1.png"> -->
+                    </div>
+                    <div class="message">
+                        <p><b>Juan Thiago:</b> Pedido recebido na noite de 2 drones</p>
+                        <small class="text-mude">há 3 Horas</small>
+                    </div>
+                    <div class="update">
+                        <!-- <img src="/Imagens/photo1.png"> -->
+                    </div>
+                    <div class="message">
+                        <p><b>Juan Thiago:</b> Pedido recebido na noite de 2 drones</p>
+                        <small class="text-mude">há 3 Horas</small>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------- FIM  RECENT UPDATES ------------------->
+            <div class="sales-analytics">
+               <h2>Entradas & Saídas</h2>
+                <div class="item Prohibited">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">arrow_upward</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>PRODUTO ADICIONADO</h3>
+                            <small class="text-muted">Nas ultimas 5 Horas</small>
+                        </div>
+                        <h5 class="sucess">39%</h5>
+                        <h3>2000</h3>
+                    </div>
+                </div>
+                <div class="item exit">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">arrow_downward</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>SAÍDA DE PRODUTO</h3>
+                            <small class="text-muted">Nas ultimas 5 Horas</small>
+                        </div>
+                        <h5 class="danger">50%</h5>
+                        <h3>1999</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>NOVO CLIENTE</h3>
+                            <small class="text-muted">Nas ultimas 3 Horas</small>
+                        </div>
+                        <h5 class="sucess">10%</h5>
+                        <h3>10</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-symbols-outlined">add</span>
+                        <h3>Adicionar Produtos</h3>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>   
+   <script src="/Dashbord/order.js"></script>
+    <script src="/Dashbord/script.js"></script> 
+</body>
+</html>
